@@ -7,7 +7,6 @@ export default {
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
-        './resources/js/**/*.vue',
     ],
 
     theme: {
@@ -17,8 +16,6 @@ export default {
             },
         },
     },
-
-    darkMode: 'class',  // Esta línea habilita el modo oscuro basado en clases
 
     plugins: [forms],
 };
