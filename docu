@@ -1,0 +1,16 @@
+# Posibles problemas y su solución:
+
+## Problemas con la creación del proyecto:
+- Si te da problemas a la hora de crear el proyecto por el certificado SSL, puede deberse principalmente a que tu antivirus no está permitiendo el acceso a la app para crearlo. Desactívalo y luego inténtalo de nuevo.
+
+## Problemas con el breeze:
+- Por norma general, solemos realizar el proyecto con la instalación por defecto del paquete de Breeze, no obstante, pude obserbar que habían algunos problemas, entre ellos el siguiente:
+Vite manifest not found at: C:\Users\HP\example-app\public\/build/manifest.json
+- Esto se puede deber a que no se han realizado los pasos correspondientes. Primero que nada, comprueba que tienes node.js instalado. Si ya lo tienes, puedes abrir la consola de CMD, situarte en la ruta de tu proyecto y seguir los siguientes comandos:
+    npm install
+    npm run dev
+    php artisan migrate
+    npm install --save-dev vite laravel-vite-plugin
+    npm install --save-dev @vitejs/plugin-vue
+
+- Esto debería solucionar el problema.
